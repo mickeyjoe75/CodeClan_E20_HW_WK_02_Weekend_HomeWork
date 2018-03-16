@@ -5,14 +5,16 @@ class TestRoom < Minitest::Test
 
   def setup()
 
-    @room_number = Room.new(101)
-    occupants = Room.new %w(guest1 guest2 guest3 guest4)
-    playlist = Room.new %w(song1 song2 song3 song4)
+    @room_1 = Room.new(101, "occupant1", "playlist1")
+
+    # @playlist1 = Room.new %w(song1 song2 song3 song4)
 
   end
-
-  def test_room_has_number()
-    assert_equal(101, @room_number)
+  # testing the getters
+  def test_room_getters()
+    assert_equal(101, @room_1.room_number)
+    assert_equal("occupant1", @room_1.occupants)
+    assert_equal("playlist1", @room_1.playlist)
   end
 
 
