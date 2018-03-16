@@ -1,7 +1,7 @@
 require('minitest/autorun')
 require_relative('../room.rb')
 
-class TestRoom < Minitest::Test
+class TestRoom < MiniTest::Test
 
   def setup()
 
