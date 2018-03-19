@@ -11,9 +11,19 @@ class Room
 
   end
 
+  def add_song_to_playlist()
+    @playlist.playlist
+  end
 
+  def add_guest_to_occupants
+    @occupant1 << "guest5"
+    return @occupant1.length
+  end
 
-
+  def remove_guest_to_occupants
+    @occupant1.pop
+    return @occupant1.length
+  end
 
 
 
